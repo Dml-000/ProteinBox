@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect"
+    href="https://fonts.googleapis.com"> 
+    <link rel="preconnect"
+    href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <title>ProteinBox</title>
+</head>
+<body>
+    <main class="wrapper">
+        <header class="hero">
+            <h1>Fresh Protein,
+                <span class="span1">Delivered </span><span class="span2">Fresh</span> 
+            </h1>
+            <p>Join the waitlist to get access to proteinBox. Quality<br> proteins, flexible plans, and stress-free delivery.</p>
+            <a href="#waitlistForm">Join the waitlist <i class="fa-solid fa-arrow-right arrow-icon"></i> </a>
+            <img 
+                src="images/hero-open-box.png" 
+                alt="ProteinBox delivery box containing fresh protein"
+                class="hero-image"
+            >
+        </header>
+        <!--Section for "Why choose proteinBox"-->
+        <section class="proteinbox">
+            <div class="proteinbox-title">
+                <h2>Why Choose ProteinBox?</h2>
+                <p>We are changing how Lagos gets quality proteins.</p>
+            </div>
+            <div class="feature-grid">
+                <article class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-temperature-half temprature-icon" aria-hidden="true"></i>
+                    </div>
+                    <h3>Fresh Guarantee</h3>
+                    <p>Every cut is sourced fresh daily and handled with strict temperature control.</p>
+                </article>
+                <article class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-shield-halved shield-icon" aria-hidden="true"></i>
+                    </div>
+                    <h3>Quality Assured</h3>
+                    <p>Premium cuts from trusted suppliers with consistent quality checks.</p>
+                </article>
+                <article class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-truck-fast truck-icon" aria-hidden="true"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Same-day or next-day delivery to major Lagos zones</p>
+                </article>
+                <article class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-clock clock-icon" aria-hidden="true"></i>
+                    </div>
+                    <h3>Save Time</h3>
+                    <p>Skip market stress. Subcribe once and enjoy predictable delivery.</p>
+                </article>
+            </div>
+        </section>
+        <!--Section for "join the wailist"-->
+        <section class="waitlist">
+            <div class="waitlist-header">
+                <h2>Join the waitlist</h2>
+                <p>Be among the first to experience hassle-free meat delivery in Lagos</p>
+            </section>
+            <div class="numberDiv">
+                <section class="number" aria-hidden="true">1</section>
+                <h3>Personal info</h3>
+                <p>Basic details</p>
+            </div>
+            <div class="form-container">
+                <form id="waitlistForm" action="/waitlist" method="post">
+                   <div class="formHeader">
+                        <h3>Tell us about yourself</h3>
+                        <p>Just the basics to get started</p>
+                   </div>
+                   <section class="form-info">
+                    <div class="form-grid">
+                        <div class="form-info">
+                            <label for="firstName">First Name</label>
+                            <input 
+                                type="text" 
+                                id="firstName"
+                                name="firtName"
+                                placeholder="John" 
+                                autocomplete="given-name"
+                                required
+                            >
+                        </div>
+                        <div class="form-info">
+                            <label for="email">Email Address</label>
+                            <input 
+                                type="email" 
+                                id="email"
+                                name="email"
+                                placeholder="you@example.com" 
+                                autocomplete="email"
+                                required
+                            >
+                        </div>
+                        <div class="form-info">
+                            <label for="whatsapp">WhatsApp Number (Optional)</label>
+                            <input 
+                                type="tel" 
+                                id="whatsapp"
+                                name="whatsapp"
+                                placeholder="+234567890" 
+                                autocomplete="tel"
+                                aria-describedby="whatsapp-help"
+                            >
+                            <p id="whatsapp-help">Used for launches updates if you prefer WhatsApp notifications</p>
+                        </div>
+                        <div class="form-info">
+                            <label for="referral">Referral Code (Optional)</label>
+                            <input 
+                                type="text" 
+                                id="referral"
+                                name="referral"
+                                placeholder="e.g. PBX-8F3A9C12" 
+                                autocomplete="tel"
+                                aria-describedby="referral-help"
+                            >
+                            <p id="referral-help">Have a friends's code? Entet it to unlock referral rewards at launch</p>
+                        </div>
+                    </div>
+                        <button type="submit" class="btn">Continue <i class="fa-solid fa-arrow-right arrow-icon" aria-hidden="true"></i> </button>
+                        <p class="agree">By joining, you agree to become one of our first customer when we launch</p>
+                   </section>
+                </form>
+            </div>
+            <p class="subscribe">Need to update your newsletter settings later? Visit <a href="/subscribe">/subscribe</a></p>
+        </section>
+        <!--Contact us-->
+        <section class="contactWrapper">
+            <div>
+                <h2>Connect With Us</h2>
+                <p>Follow us for updates, recipes and exlusives offers</p>
+            </div>
+            <ul class="socialWrapper">
+                <li>
+                    <a href="www.instagram.com"> <i class="fa-brands fa-instagram"></i> <p>Instagram</p></a>
+                </li>
+                <li>
+                    <a href="www.facebook.com"> <i class="fa-brands fa-facebook"></i> <p>Facebook</p></a>
+                </li>
+                <li>
+                    <a href="www.tiktok.com"> <i class="fa-brands fa-tiktok"></i> <p>TikTok</p></a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <img src="images/logo-footer.png" alt="ProteinBox">
+        <p>Premium Nigeria Meat Delivery</p>
+        <p class="copyright">&copy; 2026 ProteinBox. All rights reserved</p>
+    </footer>
+</body>
+</html>
